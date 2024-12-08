@@ -1,0 +1,115 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+input[type="number"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80px;
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+    margin-top: 20px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+#result {
+    font-weight: bold;
+    color: #555;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+    word-wrap: break-word;
+    margin-top: 10px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Responsiveness */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+    input[type="number"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
